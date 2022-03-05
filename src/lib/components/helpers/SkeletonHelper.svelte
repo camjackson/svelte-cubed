@@ -6,7 +6,7 @@
 	const { root, parent } = setup();
 
 	/** @type {THREE.SkeletonHelper} */
-	export let helper;
+	export let helper = null;
 
 	onMount(() => {
 		let destroyed = false;

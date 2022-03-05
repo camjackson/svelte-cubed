@@ -3,7 +3,7 @@
 	import { setup } from '../../utils/context.js';
 
 	/** @type {THREE.AnimationClip} */
-	export let clip;
+	export let clip = null;
 
 	export let time = 0;
 	export let timeScale = 1;
@@ -33,4 +33,3 @@
 		root.invalidate();
 	}
 </script>
-

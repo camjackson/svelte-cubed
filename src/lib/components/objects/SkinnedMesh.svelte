@@ -5,7 +5,7 @@
 	import * as defaults from '../../utils/defaults.js';
 
 	/** @type {THREE.SkinnedMesh} */
-	export let skinnedMesh;
+	export let skinnedMesh = null;
 
 	/** @type {THREE.BufferGeometry} */
 	export let geometry;

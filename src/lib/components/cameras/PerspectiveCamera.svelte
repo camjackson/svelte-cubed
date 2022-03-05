@@ -3,7 +3,7 @@
 	import { PerspectiveCamera, Vector3 } from 'three';
 
 	/** @type {THREE.PerspectiveCamera} */
-	export let camera;
+	export let camera = null;
 
 	export let fov = 45;
 	export let near = 0.1;

@@ -5,7 +5,7 @@
 	import * as defaults from '../../utils/defaults.js';
 
 	/** @type {THREE.Group} */
-	export let group;
+	export let group = null;
 
 	export let position = defaults.position;
 	export let rotation = defaults.rotation;
@@ -22,4 +22,4 @@
 	}
 </script>
 
-<slot></slot>
+<slot />

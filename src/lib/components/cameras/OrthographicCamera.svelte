@@ -3,7 +3,7 @@
 	import { OrthographicCamera, Vector3 } from 'three';
 
 	/** @type {THREE.OrthographicCamera} */
-	export let camera;
+	export let camera = null;
 
 	export let left = -1;
 	export let right = 1;

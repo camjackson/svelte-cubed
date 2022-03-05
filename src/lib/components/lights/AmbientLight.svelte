@@ -3,7 +3,7 @@
 	import * as THREE from 'three';
 
 	/** @type {THREE.AmbientLight} */
-	export let light;
+	export let light = null;
 
 	/** @type {string | number | THREE.Color} */
 	export let color = 0xffffff;

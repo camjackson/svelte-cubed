@@ -5,7 +5,7 @@
 	import * as defaults from '../../utils/defaults.js';
 
 	/** @type {THREE.Bone} */
-	export let bone;
+	export let bone = null;
 
 	export let position = defaults.position;
 	export let rotation = defaults.rotation;
@@ -20,4 +20,4 @@
 	}
 </script>
 
-<slot></slot>
+<slot />

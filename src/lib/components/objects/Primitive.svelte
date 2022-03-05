@@ -5,7 +5,7 @@
 	import * as defaults from '../../utils/defaults.js';
 
 	/** @type {THREE.Object3D} */
-	export let parent;
+	export let parent = null;
 
 	/** @type {THREE.Object3D} */
 	export let object;
@@ -40,5 +40,5 @@
 </script>
 
 {#if object}
-	<slot></slot>
+	<slot />
 {/if}

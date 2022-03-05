@@ -4,7 +4,7 @@
 	import { setup } from '../../utils/context.js';
 
 	/** @type {THREE.Skeleton} */
-	export let skeleton;
+	export let skeleton = null;
 
 	const { parent } = setup();
 
@@ -19,7 +19,7 @@
 	 * @param {THREE.Bone[]} bones
 	 */
 	function find_bones(object, bones = []) {
-		object.children.forEach(child => {
+		object.children.forEach((child) => {
 			if (/** @type {THREE.Bone} */ (child).type === 'Bone') {
 				bones.push(/** @type {THREE.Bone} */ (child));
 			}
@@ -40,4 +40,4 @@
 	});
 </script>
 
-<slot></slot>
+<slot />
