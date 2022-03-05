@@ -33,7 +33,7 @@
 	onMount(() => {
 		const bones = find_bones(parent);
 
-		const skeleton = new THREE.Skeleton(bones);
+		skeleton = new THREE.Skeleton(bones);
 		mesh.bind(skeleton);
 
 		return () => skeleton.dispose();
