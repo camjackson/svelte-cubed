@@ -4,6 +4,9 @@
 	import { transform } from '../../utils/object.js';
 	import * as defaults from '../../utils/defaults.js';
 
+	/** @type {THREE.SkinnedMesh} */
+	export let skinnedMesh;
+
 	/** @type {THREE.BufferGeometry} */
 	export let geometry;
 
@@ -23,6 +26,7 @@
 	/** @typedef {{ a: SkeletonNode, b: SkeletonNode, ab: THREE.Vector3 }} Capsule */
 
 	const { root, self } = setup(new THREE.SkinnedMesh(geometry, material));
+	skinnedMesh = self;
 
 	$: {
 		if (self.geometry && geometry !== self.geometry) {

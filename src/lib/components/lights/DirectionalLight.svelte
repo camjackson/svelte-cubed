@@ -2,6 +2,9 @@
 	import { setup } from '../../utils/context';
 	import * as THREE from 'three';
 
+	/** @type {THREE.DirectionalLight} */
+	export let light;
+
 	/** @type {string | number | THREE.Color} */
 	export let color = 0xffffff;
 	export let intensity = 1;
@@ -23,6 +26,7 @@
 	export let shadow = null;
 
 	const { root, self } = setup(new THREE.DirectionalLight());
+	light = self;
 
 	$: {
 		self.color.set(color);

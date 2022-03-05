@@ -5,6 +5,9 @@
 	import * as defaults from '../../utils/defaults.js';
 
 	/** @type {THREE.Object3D} */
+	export let parent;
+
+	/** @type {THREE.Object3D} */
 	export let object;
 
 	export let position = defaults.position;
@@ -12,6 +15,7 @@
 	export let scale = defaults.scale;
 
 	const { root, self } = setup(new THREE.Object3D());
+	parent = self;
 
 	/** @type {THREE.Object3D} */
 	let previous;

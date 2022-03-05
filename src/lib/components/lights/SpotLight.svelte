@@ -2,6 +2,9 @@
 	import { setup } from '../../utils/context';
 	import * as THREE from 'three';
 
+	/** @type {THREE.SpotLight} */
+	export let light;
+
 	/** @type {string | number | THREE.Color} */
 	export let color = 0xffffff;
 	export let intensity = 1;
@@ -27,6 +30,7 @@
 	export let shadow = null;
 
 	const { root, self } = setup(new THREE.SpotLight());
+	light = self;
 
 	const target_vector = new THREE.Vector3();
 

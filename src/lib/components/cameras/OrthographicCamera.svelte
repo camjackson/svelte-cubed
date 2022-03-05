@@ -2,6 +2,9 @@
 	import { setup } from '../../utils/context.js';
 	import { OrthographicCamera, Vector3 } from 'three';
 
+	/** @type {THREE.OrthographicCamera} */
+	export let camera;
+
 	export let left = -1;
 	export let right = 1;
 	export let top = 1;
@@ -14,6 +17,7 @@
 	export let target = [0, 0, 0]; // TODO accept an object/vector?
 
 	const { root, self } = setup(new OrthographicCamera(left, right, top, bottom, near, far));
+	camera = self;
 
 	const target_vector = new Vector3();
 

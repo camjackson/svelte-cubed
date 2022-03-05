@@ -2,6 +2,9 @@
 	import { setup } from '../../utils/context.js';
 	import { PerspectiveCamera, Vector3 } from 'three';
 
+	/** @type {THREE.PerspectiveCamera} */
+	export let camera;
+
 	export let fov = 45;
 	export let near = 0.1;
 	export let far = 2000;
@@ -21,6 +24,7 @@
 	export let target = [0, 0, 0]; // TODO accept an object/vector?
 
 	const { root, self } = setup(new PerspectiveCamera());
+	camera = self;
 
 	const target_vector = new Vector3();
 

@@ -45,6 +45,23 @@ export function set_root(context) {
 	return context;
 }
 
+export function getGlobalObjects() {
+	const {
+		canvas,
+		scene,
+		renderer,
+		camera: { object: camera },
+		controls: { object: controls }
+	} = get_root();
+	return {
+		canvas,
+		scene,
+		renderer,
+		camera,
+		controls
+	};
+}
+
 export function getInvalidator() {
 	return get_root().invalidate;
 }

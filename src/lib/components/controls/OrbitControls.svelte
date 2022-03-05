@@ -41,7 +41,7 @@
 	const dispatch = createEventDispatcher();
 
 	/** @type {OrbitControls} */
-	let controls;
+	export let controls;
 
 	root.controls.set((camera, canvas) => {
 		controls = new OrbitControls(camera, canvas);

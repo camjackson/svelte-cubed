@@ -3,6 +3,9 @@
 ## 0.2.1
 
 - Correctly diff OrbitControls target ([#12](https://github.com/Rich-Harris/svelte-cubed/issues/12))
+- Fork changelog
+  - Expose the scene, canvas, camera, and controls via context
+  - Expose three.js instances via bindings on all components e.g. meshes, lights, groups, etc.
 
 ## 0.2.0
 

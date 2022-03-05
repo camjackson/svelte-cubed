@@ -5,9 +5,10 @@
 
 	const { root, parent } = setup();
 
+	/** @type {THREE.SkeletonHelper} */
+	export let helper;
+
 	onMount(() => {
-		/** @type {THREE.SkeletonHelper} */
-		let helper;
 		let destroyed = false;
 
 		tick().then(() => {

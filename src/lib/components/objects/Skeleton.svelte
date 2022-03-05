@@ -3,6 +3,9 @@
 	import * as THREE from 'three';
 	import { setup } from '../../utils/context.js';
 
+	/** @type {THREE.Skeleton} */
+	export let skeleton;
+
 	const { parent } = setup();
 
 	const mesh = /** @type {THREE.SkinnedMesh} */ (parent);

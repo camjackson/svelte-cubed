@@ -33,6 +33,7 @@ export { default as VertexNormalsHelper } from './components/helpers/VertexNorma
 export { onFrame } from './utils/lifecycle.js';
 
 // context
+export { getGlobalObjects } from './utils/context.js';
 export { getInvalidator } from './utils/context.js';
 export { getCapabilities } from './utils/context.js';
 

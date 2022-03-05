@@ -4,6 +4,9 @@
 	import { transform } from '../../utils/object.js';
 	import * as defaults from '../../utils/defaults.js';
 
+	/** @type {THREE.Mesh<THREE.BufferGeometry, THREE.Material>} */
+	export let mesh;
+
 	/** @type {THREE.BufferGeometry} */
 	export let geometry = defaults.geometry;
 
@@ -19,6 +22,7 @@
 	// TODO morphTargetInfluences, morphTargetDictionary, raycast
 
 	const { root, self } = setup(new THREE.Mesh(geometry, material));
+	mesh = self;
 
 	$: {
 		if (self.geometry && geometry !== self.geometry) {

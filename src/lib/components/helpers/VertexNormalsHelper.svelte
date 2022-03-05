@@ -8,7 +8,7 @@
 
 	const { root, parent } = setup();
 
-	const helper = new VertexNormalsHelper(parent, size, color);
+	export const helper = new VertexNormalsHelper(parent, size, color);
 	root.scene.add(helper);
 
 	root.before_render(() => {

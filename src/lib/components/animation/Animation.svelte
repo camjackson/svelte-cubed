@@ -12,10 +12,10 @@
 	const { root, parent } = setup();
 
 	/** @type {THREE.AnimationMixer} */
-	const mixer = new THREE.AnimationMixer(parent);
+	export const mixer = new THREE.AnimationMixer(parent);
 
 	/** @type {THREE.AnimationAction} */
-	let action;
+	export let action;
 
 	$: {
 		action = mixer.clipAction(clip);

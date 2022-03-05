@@ -2,12 +2,16 @@
 	import { setup } from '../../utils/context';
 	import * as THREE from 'three';
 
+	/** @type {THREE.HemisphereLight} */
+	export let light;
+
 	/** @type {string | number | THREE.Color} */
 	export let color = 0xffffff;
 	export let groundColor = 0xffffff;
 	export let intensity = 1;
 
 	const { root, self } = setup(new THREE.HemisphereLight());
+	light = self;
 
 	$: {
 		self.color.set(color);
