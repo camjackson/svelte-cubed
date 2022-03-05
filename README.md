@@ -1,4 +1,10 @@
-# svelte-cubed
+# @camjackson/svelte-cubed
+
+Forked from the [original svelte-cubed](https://github.com/Rich-Harris/svelte-cubed).
+Works mostly the same way, but exposes bindings for all the three.js objects that
+it creates.
+
+---
 
 A Three.js component library for Svelte.
 

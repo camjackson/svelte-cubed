@@ -20,7 +20,7 @@ const config = {
 		vite: {
 			resolve: {
 				alias: {
-					'svelte-cubed': path.resolve('src/lib')
+					'@camjackson/svelte-cubed': path.resolve('src/lib')
 				}
 			},
 			optimizeDeps: {

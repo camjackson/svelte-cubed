@@ -1,4 +1,4 @@
-# svelte-cubed changelog
+# @camjackson/svelte-cubed changelog
 
 ## 0.2.1
 

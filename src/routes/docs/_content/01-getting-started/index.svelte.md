@@ -19,6 +19,13 @@ Svelte Cubed is a component library for building [Three.js](https://threejs.org)
 
 **It is not yet done**. You can use it, but you should expect missing features and APIs that aren't yet set in stone.
 
+## What is this fork?
+
+This is a fork of the original svelte cubed. Works mostly the same way, but exposes bindings for all the three.js objects that it creates. This allows you to get references to:
+
+- Global objects like the scene, canvas, camera, and controls
+- Internal instances created by components, e.g. meshes, lights, groups, etc.
+
 ## Creating a project
 
 If you don't have a Svelte project to work on, create a new one with SvelteKit:
@@ -33,7 +40,7 @@ npm run dev
 Then install Three.js and Svelte Cubed:
 
 ```bash
-npm install three svelte-cubed
+npm install three @camjackson/svelte-cubed
 ```
 
 If you're using TypeScript:
